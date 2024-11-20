@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmailServices.Communication\EmailServices.Communication.csproj" />
+    <ProjectReference Include="..\EmailServices.Domain\EmailServices.Domain.csproj" />
+    <ProjectReference Include="..\EmailServices.Exception\EmailServices.Exception.csproj" />
+  </ItemGroup>
+
 </Project>
