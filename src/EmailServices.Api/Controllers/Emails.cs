@@ -1,10 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EmailServices.Api.Controllers;
-public class Emails : Controller
+[Route("api/[controller]")]
+[ApiController]
+public class Emails : ControllerBase
 {
-    public IActionResult Index()
-    {
-        return View();
-    }
+    //[HttpPost]
+    ////[ProducesResponseType(typeof(), StatusCodes.Status201Created)]
+    ////[ProducesResponseType(typeof(), StatusCodes.Status400BadRequest)]
+    //public async Task<IActionResult> Register(
+    //[FromServices]  useCase,
+    //[FromBody]  request)
+    //{
+    //    var response = await useCase.Execute(request);
+
+    //    return Created(string.Empty, response);
+    //}
 }
