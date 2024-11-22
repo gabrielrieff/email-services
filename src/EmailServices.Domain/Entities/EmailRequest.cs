@@ -1,11 +1,14 @@
-﻿namespace EmailServices.Domain.Entities;
+﻿using EmailServices.Domain.Enums;
 
-public class EmailRequest
+namespace EmailServices.Domain.Entities;
+
+public class EmailRequest : BaseEntity
 {
-    public string To { get; set; } = string.Empty;
+    public List<string> To { get; set; }
     public string Subject { get; set; } = string.Empty;
     public string Body { get; set; } = string.Empty;
     public string From { get; set; } = string.Empty;
+    public StatusEmail EmailStatus { get; set; }
     public long SmtpConfigurationId { get; set; }
     public SmptConfiguration SmtpConfiguration { get; set; } = default!;
 }

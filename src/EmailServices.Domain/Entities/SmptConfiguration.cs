@@ -1,8 +1,7 @@
 ﻿namespace EmailServices.Domain.Entities;
 
-public class SmptConfiguration
+public class SmptConfiguration : BaseEntity
 {
-    public long Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public string SmtpServer { get; set; } = string.Empty;
     public int SmtpPort { get; set; }
