@@ -15,7 +15,9 @@ public class AutoMapping : Profile
 
     private void RequestToEntity()
     {
-        CreateMap<RequestRegisterTenant, Tenant>();
+        CreateMap<RequestRegisterTenant, Tenant>()
+            .ForMember(dest => dest.Create_at, opt => opt.MapFrom(_ => DateTime.Now))
+            .ForMember(dest => dest.Update_at, opt => opt.MapFrom(_ => DateTime.Now));
 
     }
 
