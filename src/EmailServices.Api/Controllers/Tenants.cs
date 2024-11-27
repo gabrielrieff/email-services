@@ -1,5 +1,5 @@
 ﻿using EmailServices.Application.UseCase.Tenants.Register;
-using EmailServices.Communication.Requests;
+using EmailServices.Communication.Requests.Tenants;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmailServices.Api.Controllers;
