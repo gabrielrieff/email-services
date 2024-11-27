@@ -10,5 +10,5 @@ public class EmailRequest : BaseEntity
     public string From { get; set; } = string.Empty;
     public StatusEmail EmailStatus { get; set; }
     public long SmtpConfigurationId { get; set; }
-    public SmptConfiguration SmtpConfiguration { get; set; } = default!;
+    public SmtpConfiguration SmtpConfiguration { get; set; } = default!;
 }
