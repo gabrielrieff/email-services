@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using EmailServices.Communication.Requests;
+using EmailServices.Communication.Requests.Tenants;
 using EmailServices.Communication.Response;
 using EmailServices.Domain.Entities;
 using EmailServices.Domain.Repositories;

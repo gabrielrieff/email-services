@@ -1,4 +1,4 @@
-﻿using EmailServices.Communication.Requests;
+﻿using EmailServices.Communication.Requests.Tenants;
 using FluentValidation;
 
 namespace EmailServices.Application.UseCase.Tenants;
