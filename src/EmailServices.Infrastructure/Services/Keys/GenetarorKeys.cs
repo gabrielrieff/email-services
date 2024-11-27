@@ -1,9 +1,9 @@
-﻿using EmailServices.Domain.Services.Key;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
+using EmailServices.Domain.Services.Keys;
 
 namespace EmailServices.Infrastructure.Services.Keys;
 
-public class GenetarorKeys : Key
+public class GenetarorKeys : IKey
 {
     public string GeneratorApiKey(int size)
     {

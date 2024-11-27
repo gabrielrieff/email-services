@@ -5,26 +5,26 @@ using EmailServices.Domain.Entities;
 using EmailServices.Domain.Repositories;
 using EmailServices.Domain.Repositories.Tenants;
 using EmailServices.Domain.Security.Cryptography;
-using EmailServices.Domain.Services.Key;
+using EmailServices.Domain.Services.Keys;
 using EmailServices.Exception.ExceptionBase;
 
 namespace EmailServices.Application.UseCase.Tenants.Register;
 
 public class RegisterTenantUseCase : IRegisterTenantUseCase
 {
-    private readonly ITenantsRepository _repo;
+    private readonly ITenantsWhiteOnlyRepository _repo;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
     private readonly IPasswordEncripter _encrypter;
-    private readonly Key _generateKey;
+    private readonly IKey _generateKey;
 
 
     public RegisterTenantUseCase(
-        ITenantsRepository repo,
+        ITenantsWhiteOnlyRepository repo,
         IUnitOfWork unitOfWork,
         IMapper mapper,
         IPasswordEncripter encrypter,
-        Key generateKey)
+        IKey generateKey)
     {
         _repo = repo;
         _unitOfWork = unitOfWork;
