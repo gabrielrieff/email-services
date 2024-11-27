@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using EmailServices.Communication.Requests;
+using EmailServices.Communication.Requests.SmtpConfiguration;
+using EmailServices.Communication.Requests.Tenants;
 using EmailServices.Communication.Response;
 using EmailServices.Domain.Entities;
 
@@ -16,6 +17,10 @@ public class AutoMapping : Profile
     private void RequestToEntity()
     {
         CreateMap<RequestRegisterTenant, Tenant>()
+            .ForMember(dest => dest.Create_at, opt => opt.MapFrom(_ => DateTime.UtcNow))
+            .ForMember(dest => dest.Update_at, opt => opt.MapFrom(_ => DateTime.UtcNow));
+        
+        CreateMap<RequestRegisterSmtpConfiguration, SmtpConfiguration>()
             .ForMember(dest => dest.Create_at, opt => opt.MapFrom(_ => DateTime.UtcNow))
             .ForMember(dest => dest.Update_at, opt => opt.MapFrom(_ => DateTime.UtcNow));
 
