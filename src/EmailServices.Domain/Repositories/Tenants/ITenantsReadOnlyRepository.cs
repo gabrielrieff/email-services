@@ -1,7 +1,7 @@
 ﻿using EmailServices.Domain.Entities;
 
 namespace EmailServices.Domain.Repositories.Tenants;
-public interface ITenantsRepository
+public interface ITenantsReadOnlyRepository
 {
-    Task Add(Tenant tenant);
+    Task<Tenant?> GetTenantByDomain(string domain);
 }
