@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace EmailServices.Api.Filters;
 
-public class ExceptionFilter
+public class ExceptionFilter : IExceptionFilter
 {
     public void OnException(ExceptionContext context)
     {
