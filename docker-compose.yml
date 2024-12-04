@@ -11,12 +11,12 @@ services:
   #     email-services-networks:
 
   database:
-    image: postgres
+    image: mongo
     ports:
-      - "5432:5432"
+      - "27017:27017"
     environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
+      - MONGO_INITDB_ROOT_USERNAME=docker
+      - MONGO_INITDB_ROOT_PASSWORD=docker
       - POSTGRES_DB=email-services
 # networks:
 #   email-services-networks:

@@ -9,16 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4EB3E00A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices.Api", "src\EmailServices.Api\EmailServices.Api.csproj", "{6D0E579D-1B2D-4E60-94D9-46FAA2E0CDE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices.Domain", "src\EmailServices.Domain\EmailServices.Domain.csproj", "{2B289F0C-DDCA-453F-AAD1-90044AFC5AE1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices.Application", "src\EmailServices.Application\EmailServices.Application.csproj", "{49C67BDD-C0CA-44C5-A2C7-0262BFACBA43}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices.Communication", "src\EmailServices.Communication\EmailServices.Communication.csproj", "{9EE30A75-A024-42FC-95FF-01D284F59EBE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices.Exception", "src\EmailServices.Exception\EmailServices.Exception.csproj", "{11BA53F8-9B2B-47C0-9AA7-AE460FC67240}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices.Infrastructure", "src\EmailServices.Infrastructure\EmailServices.Infrastructure.csproj", "{47CDF76D-F951-4E1A-B4D4-45D008791DBD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,37 +19,12 @@ Global
 		{6D0E579D-1B2D-4E60-94D9-46FAA2E0CDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D0E579D-1B2D-4E60-94D9-46FAA2E0CDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D0E579D-1B2D-4E60-94D9-46FAA2E0CDE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B289F0C-DDCA-453F-AAD1-90044AFC5AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B289F0C-DDCA-453F-AAD1-90044AFC5AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B289F0C-DDCA-453F-AAD1-90044AFC5AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B289F0C-DDCA-453F-AAD1-90044AFC5AE1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{49C67BDD-C0CA-44C5-A2C7-0262BFACBA43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49C67BDD-C0CA-44C5-A2C7-0262BFACBA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49C67BDD-C0CA-44C5-A2C7-0262BFACBA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49C67BDD-C0CA-44C5-A2C7-0262BFACBA43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EE30A75-A024-42FC-95FF-01D284F59EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EE30A75-A024-42FC-95FF-01D284F59EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EE30A75-A024-42FC-95FF-01D284F59EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EE30A75-A024-42FC-95FF-01D284F59EBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11BA53F8-9B2B-47C0-9AA7-AE460FC67240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11BA53F8-9B2B-47C0-9AA7-AE460FC67240}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11BA53F8-9B2B-47C0-9AA7-AE460FC67240}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11BA53F8-9B2B-47C0-9AA7-AE460FC67240}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47CDF76D-F951-4E1A-B4D4-45D008791DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47CDF76D-F951-4E1A-B4D4-45D008791DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47CDF76D-F951-4E1A-B4D4-45D008791DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47CDF76D-F951-4E1A-B4D4-45D008791DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6D0E579D-1B2D-4E60-94D9-46FAA2E0CDE3} = {0D5DF06E-852B-4C7D-ACC1-990A201B2D20}
-		{2B289F0C-DDCA-453F-AAD1-90044AFC5AE1} = {0D5DF06E-852B-4C7D-ACC1-990A201B2D20}
-		{49C67BDD-C0CA-44C5-A2C7-0262BFACBA43} = {0D5DF06E-852B-4C7D-ACC1-990A201B2D20}
-		{9EE30A75-A024-42FC-95FF-01D284F59EBE} = {0D5DF06E-852B-4C7D-ACC1-990A201B2D20}
-		{11BA53F8-9B2B-47C0-9AA7-AE460FC67240} = {0D5DF06E-852B-4C7D-ACC1-990A201B2D20}
-		{47CDF76D-F951-4E1A-B4D4-45D008791DBD} = {0D5DF06E-852B-4C7D-ACC1-990A201B2D20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD152B7C-1AE8-4A48-9755-3252E364AC58}

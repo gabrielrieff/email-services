@@ -1,5 +1,7 @@
 ﻿
 using EmailServices.Application.AutoMapper;
+using EmailServices.Application.UseCase.Login;
+using EmailServices.Application.UseCase.Smtp.Register;
 using EmailServices.Application.UseCase.Tenants.Register;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -21,6 +23,8 @@ public static class DependencyInjectionExtension
     private static void AddUseCases(IServiceCollection services)
     {
         services.AddScoped<IRegisterTenantUseCase, RegisterTenantUseCase>();
+        services.AddScoped<IDoLoginUseCase, DoLoginUseCase>();
+        services.AddScoped<IRegisterSmtpConfigurationUseCase, RegisterSmtpConfigurationUseCase>();
 
     }
 }

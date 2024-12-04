@@ -13,14 +13,19 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="MongoDB.EntityFrameworkCore" Version="8.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EmailServices.Application\EmailServices.Application.csproj" />
-    <ProjectReference Include="..\EmailServices.Communication\EmailServices.Communication.csproj" />
-    <ProjectReference Include="..\EmailServices.Exception\EmailServices.Exception.csproj" />
-    <ProjectReference Include="..\EmailServices.Infrastructure\EmailServices.Infrastructure.csproj" />
+    <Compile Remove="Controllers\StmpConfigurationController.cs" />
+    <Compile Remove="DataAccess\EmailServicesDContext.cs" />
+    <Compile Remove="Repositories\UnitOfWork.cs" />
+    <Compile Remove="Interfaces\IUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
   </ItemGroup>
 
 </Project>

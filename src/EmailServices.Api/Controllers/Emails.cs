@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EmailServices.Api.Communication;
+using EmailServices.Api.UseCase;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmailServices.Api.Controllers;
@@ -6,15 +8,15 @@ namespace EmailServices.Api.Controllers;
 [ApiController]
 public class Emails : ControllerBase
 {
-    //[HttpPost]
-    ////[ProducesResponseType(typeof(), StatusCodes.Status201Created)]
-    ////[ProducesResponseType(typeof(), StatusCodes.Status400BadRequest)]
-    //public async Task<IActionResult> Register(
-    //[FromServices]  useCase,
-    //[FromBody]  request)
-    //{
-    //    var response = await useCase.Execute(request);
-
-    //    return Created(string.Empty, response);
-    //}
+    [HttpPost]
+    // [ProducesResponseType(typeof(), StatusCodes.Status201Created)]
+    // [ProducesResponseType(typeof(), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> Register(
+        [FromServices] ISendMailUseCase useCase,
+        [FromBody] SendMailRequest request)
+    {
+        var response = await useCase.Execute(request);
+        
+        return Ok();
+    }
 }
